@@ -12,7 +12,9 @@ class RuniFi {
         Track track3 = new Track("Creep", "Radiohead", 369);
         Track track4 = new Track("Thriller", "Michael Jackson", 222);
         Track track5 = new Track("Yesterday", "The Beatles", 125);
-      
+        
+        System.out.println(track1.formattedDuration(track1.getDuration()));
+
         // Adds the tracks to the List
         System.out.println("Adding tracks...");
         myList.add(track1);
