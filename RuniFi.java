@@ -12,7 +12,9 @@ class RuniFi {
         Track track3 = new Track("Creep", "Radiohead", 369);
         Track track4 = new Track("Thriller", "Michael Jackson", 222);
         Track track5 = new Track("Yesterday", "The Beatles", 125);
-      
+        
+        System.out.println(track1.formattedDuration(track1.getDuration()));
+
         // Adds the tracks to the List
         System.out.println("Adding tracks...");
         myList.add(track1);
@@ -62,6 +64,9 @@ class RuniFi {
 
         // Tests the ability to find the track with the shortest duration
         System.out.println("\nThe shortest track in my list is " + myList.titleOfShortestTrack());
+        System.out.println("\nThe shortest track in my list is " + myList.getTrack(myList.minIndex(1)).getTitle());
+        System.out.println("\nThe shortest track in my list is " + myList.getTrack(myList.minIndex(2)).getTitle());
+        System.out.println("\nThe shortest track in my list is " + myList.getTrack(myList.minIndex(3)).getTitle());
 
         // Sorts the list 
         myList.sortedInPlace();
